@@ -1,0 +1,170 @@
+#pagination-container {
+  display: flex;
+  justify-content: center;
+}
+#pagination {
+  display: flex;
+  color: #505050;
+}
+#pagination-list {
+  display: flex;
+  list-style: none;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+.pagination-button {
+  display: flex;
+  
+  border: 0px solid #777;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+.pagination-button{
+
+  background: #ffff;
+  padding:0px 20px;
+
+}
+  
+
+
+.pagination-list-item {
+  margin-right: 10px;
+  background-color: transparent; 
+
+  font-size: 14px;
+  padding-top:8px;
+  padding-bottom:8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+}
+.pagination-list-item.active {
+  background: #505050;
+  color: white;
+
+  font-size: 14px;
+  padding-top:20px!important;
+  padding-bottom:20px!important;
+  border-radius: 4px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+}
+.pagination-go-first {
+  margin-right: 40px;
+  position: relative;
+  margin-left: 10px;
+  background-color: transparent !important; 
+
+  font-size: 14px;
+  padding:0px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+}
+.pagination-go-first:before {
+  position: absolute;
+  content: '...';
+  right: -33px;
+
+}
+.pagination-go-last {
+  margin-left: 40px;
+  position: relative;
+  margin-right: 10px;
+  background-color: transparent; 
+
+  font-size: 14px;
+  padding:0px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 39px -2px rgba(0,0,0,0.05);
+}
+.pagination-go-last:before {
+  position: absolute;
+  content: '...';
+  left: -33px;
+}
+
+
+/* SHIMMER ANIMATIOM */
+
+
+
+#pageloaderwrap .shine {
+  background: #f6f7f8;
+  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 104px; 
+  display: inline-block;
+  position: relative; 
+  
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  }
+
+#pageloaderwrap box {
+  height: 104px;
+  width: 100px;
+}
+
+#pageloaderwrap div {
+  display: inline-flex;
+  flex-direction: column; 
+  margin-left: 25px;
+  margin-top: 15px;
+  vertical-align: top; 
+}
+
+#pageloaderwrap lines {
+  height: 10px;
+  margin-top: 10px;
+  width: 200px; 
+}
+
+#pageloaderwrap photo {
+  display: block!important;
+  width: 325px; 
+  height: 100px; 
+  margin-top: 15px;
+}
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  
+  100% {
+    background-position: 468px 0; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
